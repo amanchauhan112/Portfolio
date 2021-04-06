@@ -17,7 +17,7 @@ import { IconContext } from 'react-icons';
     function Navbar() {
 
     return (
-        <div class="container">
+        <div className="container">
             
       <IconContext.Provider value={{ color: '#fff' }}>
       <Sidebarr />
@@ -29,23 +29,23 @@ import { IconContext } from 'react-icons';
 {/* <NavLink to="/" activeStyle>
 <img src={require('../../images/gg.png')} alt='Home' />
 </NavLink> */}
-<NavLink to="/" activeStyle>
+<NavLink to="/" >
     Home
 </NavLink>
 
-<NavLink to="/about" activeStyle>
+<NavLink to="/about" >
     About
 </NavLink>
-<NavLink to="/education" activeStyle>
+<NavLink to="/education" >
     Education
 </NavLink>
-<NavLink to="/skills" activeStyle>
+<NavLink to="/skills" >
     Skills
 </NavLink>
-<NavLink to="/projects" activeStyle>
+<NavLink to="/projects" >
     Projects
 </NavLink>
-<NavLink to="/profile_links" activeStyle>
+<NavLink to="/profile_links" >
     Profile Links
 </NavLink>
 {/* <NavBtnLink to="/signin">Sign In</NavBtnLink> */}

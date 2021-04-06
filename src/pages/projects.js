@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div className="div" >
 <h1 className="heading">Projects</h1>
-<hr style={{color:"white"}}/>
+{/* <hr style={{color:"white"}}/> */}
 
 <br></br>
 

@@ -1,8 +1,10 @@
 // import React from 'react';
 import '../css/heading.css';
-import myimg from '../images/gg.png';
+import myimg from '../images/my.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin ,faGithub,faWordpress,faTwitter,faFacebook} from '@fortawesome/free-brands-svg-icons'
+import './style.css';
+
 const About = () => {
   return (
    <div className="div">
@@ -22,54 +24,18 @@ const About = () => {
       &emsp;
       <a  href="https://m.facebook.com/aman.chauhan.9809">
       <FontAwesomeIcon icon={faFacebook} style={{color:"white"}}/></a>
-<div style={{marginTop:"50px"}}>
-<div  className="content" style={{width:"50px",float:"left"}}>
-      <p className="content" style={{float:"left"}}>I currently am a student of GTBIT
-      
-      sasddddddddddddasdfdfdfdfdfdfdfdfdfdf
-      asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf
-      asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf
-      sdf
-      fsd
-      fsdsdaf
 
-      sfa
-      sdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfs
-      sasddddddddddddasdfdfdfdfdfdfdfdfdfdf
-      asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf
-      asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf
-      sdf
-      fsd
-      fsdsdaf
+<div  className="content" style={{width:"500px",marginTop:"50px"}}>
+      <p className="content font text" style={{float:"left"}}>I currently am a student of GTBIT.I startes d my web dev journey in my 2nd semester      
+     , that time I only knew HTML & css .I created websites using that and also I learnt Bootstrap.
+     Today I use ReactJS to devlop Websites.
+     I specialise in creating beautiful websites using best practice accesibility andm latest web standards.
+     All my sites are loving and hand coded.
 
-      sfa
-      sdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfs
-       
-      sasddddddddddddasdfdfdfdfdfdfdfdfdfdf
-      asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf
-      asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf
-      sdf
-      fsd
-      fsdsdaf
-
-      sfa
-      sdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfs
-      sasddddddddddddasdfdfdfdfdfdfdfdfdfdf
-      asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf
-      asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf
-      sdf
-      fsd
-      fsdsdaf
-      sasddddddddddddasdfdfdfdfdfdfdfdfdfdf
-      asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf
-      asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf
-      sdf
-      fsd
-      fsdsdaf
         </p>
       </div>
-        <img  src={myimg} style={{width:"300px",height:"400px",float:"right",borderRadius:"20%"}} alt="myPic"/> 
-      </div>
+        <img  src={myimg} style={{width:"300px",height:"350px",float:"right",borderRadius:"20%",marginRight:"60px"}} alt="myPic"/> 
+     
     </div>
   );
 };

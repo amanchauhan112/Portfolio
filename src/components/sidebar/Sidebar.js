@@ -24,7 +24,7 @@ import * as FaIcons from 'react-icons/fa';
     const showSidebar = () => setSidebar(!sidebar);
 
     return (
-        <div class="container" >
+        <div className="container" >
             
       <IconContext.Provider value={{ color: '#fff' }}>
 

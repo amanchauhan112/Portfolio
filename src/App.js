@@ -9,6 +9,7 @@ import Education from './pages/education';
 import Skills from './pages/skills';
 import Profile_Links from './pages/profile_links';
 import Projects from './pages/projects';
+import Footer from './components/footer/footer';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
       <Route path='/projects' component={Projects} />
       <Route path='/profile_links' component={Profile_Links} />
     </Switch>
-    
+    <Footer/>
     </Router>
   );
 }
