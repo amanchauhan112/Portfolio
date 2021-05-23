@@ -3,7 +3,7 @@ import '../css/heading.css';
 import myimg from '../images/my.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin ,faGithub,faWordpress,faTwitter,faFacebook} from '@fortawesome/free-brands-svg-icons'
-import './style.css';
+import '../css/style.css';
 
 const About = () => {
   return (
@@ -29,7 +29,7 @@ const About = () => {
       <p className="content font text" style={{float:"left"}}>I currently am a student of GTBIT.I startes d my web dev journey in my 2nd semester      
      , that time I only knew HTML & css .I created websites using that and also I learnt Bootstrap.
      Today I use ReactJS to devlop Websites.
-     I specialise in creating beautiful websites using best practice accesibility andm latest web standards.
+     I specialise in creating beautiful websites using best practice accesibility and latest web standards.
      All my sites are loving and hand coded.
 
         </p>

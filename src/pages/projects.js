@@ -1,12 +1,17 @@
 import React from 'react';
 import '../css/heading.css';
+import './projects.css';
+import './footer.css';
 
 const Projects = () => {
   return (
+    
     <div className="div" >
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous"></link>
+      <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&amp;display=swap" rel="stylesheet"></link>
 <h1 className="heading">Projects</h1>
 {/* <hr style={{color:"white"}}/> */}
-
+{/* 
 <br></br>
 
 <h1 className="subheading">ANNADATA | Full-Stack</h1>
@@ -48,8 +53,76 @@ take it to nearby hospital or clinic.
 <p className="content">
 • Machine Learning A-z course from Udemy . In this I learned about
 Regression ,Clustering ,Classification of data.
-</p>
+</p> */}
+<div class="cards">
+  {/* <h1>Check out My Work.</h1> */}
+  <div class="cards__container">
+    <div class="cards__wrapper">
+      <ul class="cards__items">
+        <li class="cards__item">
+          <a class="cards__item__link" href="https://luff-chat.web.app/">
+            <figure class="cards__item__pic-wrap" data-category="MERN App">
+            <img class="cards__item__img" alt="Travel" src="https://cdn.discordapp.com/attachments/725022555273953282/844964395402395648/unknown.png"/>
+            </figure>
+            <div class="cards__item__info">
+              <h5 class="cards__item__text">Luff-Chat: Global Chat app .Hop in with random people Around the world, chat with them make new friends and have fun.</h5>
+            </div>
+            </a>
+            </li>
+            
+             <li class="cards__item"><a class="cards__item__link" href="https://luff-shortclips.web.app/">
+               <figure class="cards__item__pic-wrap" data-category="MERN App"><img class="cards__item__img" alt="Travel" src="https://cdn.discordapp.com/attachments/725022555273953282/844965664213303296/unknown.png"/>
 
+               </figure>
+             <div class="cards__item__info"><h5 class="cards__item__text">Luff-ShortClips: This is a app where you can post clips that can be sent by everyone. So Its time to open your camera and record a video to share with the world.</h5>
+             </div>
+             </a>
+             </li>
+             {/* <li class="cards__item"><a class="cards__item__link" href="https://luff-dating-21bf1.web.app/"><figure class="cards__item__pic-wrap" data-category="MERN App"><img class="cards__item__img" alt="Travel" src="https://cdn.discordapp.com/attachments/725022555273953282/844965264511860776/unknown.png"></figure><div class="cards__item__info"><h5 class="cards__item__text">Luff-Dating: This is a dating platform where people can meet and if they like each other, those two individuals may become lovers one day.</h5></div></a></li> */}
+            </ul>
+
+            {/* <ul class="cards__items">
+            <li class="cards__item"><a class="cards__item__link" href="https://github.com/Luffyguy/Luff-Notes"><figure class="cards__item__pic-wrap" data-category="MERN App"><img class="cards__item__img" alt="Travel" src="https://i.imgur.com/nEH25nJ.png"></figure><div class="cards__item__info"><h5 class="cards__item__text">Luff-Notes: online Notes maker, lets you create, edit and delete Notes</h5></div></a></li>
+            <li class="cards__item"><a class="cards__item__link" href="https://github.com/Luffyguy/Luff-Docs"><figure class="cards__item__pic-wrap" data-category="MERN App"><img class="cards__item__img" alt="Travel" src="https://i.imgur.com/FL7O1Cr.png"></figure><div class="cards__item__info"><h5 class="cards__item__text">Luff-Docs: online Ducument Editor, lets you Downoad and Print pages </h5></div></a></li>
+            </ul> */}
+    
+            {/* <ul class="cards__items">
+            <li class="cards__item"><a class="cards__item__link" href="https://github.com/Luffyguy/Covid-Tracker"><figure class="cards__item__pic-wrap" data-category="Reactjs App"><img class="cards__item__img" alt="Travel" src="https://i.imgur.com/UezoUu3.png"></figure><div class="cards__item__info"><h5 class="cards__item__text">Covid Tracker: Stay updated about the Covid cases in India</h5></div></a></li>
+            <li class="cards__item"><a class="cards__item__link" href="https://github.com/Luffyguy/Luffy-Desktop-Assistant"><figure class="cards__item__pic-wrap" data-category="Adventure"><img class="cards__item__img" alt="Travel" src="https://i.imgur.com/xMq9pVR.png"></figure><div class="cards__item__info"><h5 class="cards__item__text">Luffy-Bot: your personal Desktop Assistant, It interacts with use, plays songs and has many games included.</h5></div><a></li>
+            </ul> */}
+
+            </div>
+            </div>
+            </div>
+            <div class="footer-container">
+              {/* <section class="footer-subscription">
+                
+             <p class="footer-subscription-heading">ASK ME ANYTHING HERE</p>
+                <p class="footer-subscription-text">Send me an Email</p><div class="input-areas">
+                  
+                  <form><input class="footer-input" name="email" type="email" placeholder="Your Email"><input class="footer-input" name="Content" type="Write your message" placeholder="Write your message"><button class="btn btn--outline btn--medium">Submit</button></form>
+                  </div>
+                  </section> */}
+                  <section class="social-media">
+                    <div class="social-media-wrap">
+                      <div class="footer-logo">
+                        <a class="social-logo" href="/">
+                          Harsh Tanwar<i class="fab fa-typo3"></i>
+                          </a>
+                      </div>
+
+                          <small class="website-rights">Luffyguy © 2021</small>
+                         
+                          <div class="social-icons">
+                            <a class="social-icon-link linkedin" href="https://github.com/luffyguy" aria-label="Github"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            <a class="social-icon-link facebook" href="https://www.facebook.com/harsh.tanwar.5811" aria-label="Facebook"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                            <a class="social-icon-link facebook" href="https://www.facebook.com/harsh.tanwar.5811" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a class="social-icon-link instagram" href="https://www.instagram.com/_harshtanwar_/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a class="social-icon-link twitter" href="https://twitter.com/harshtanwar25" aria-label="LinkedIn"><i class="fab fa-twitter"></i></a>
+                          </div>
+            </div>
+            </section>
+            </div>
  </div>
   );
 };

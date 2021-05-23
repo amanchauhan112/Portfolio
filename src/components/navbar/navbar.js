@@ -1,5 +1,4 @@
-// import React, { useState } from 'react';
-
+import React, { useState } from 'react';
 import {
     Nav,
     NavLink,
@@ -11,24 +10,24 @@ import {
   import Sidebarr from '../sidebar/Sidebar';
 
 import './navbar.css';
+import './nav.css';
+
 import { IconContext } from 'react-icons';
 
 
     function Navbar() {
 
     return (
-        <div className="container">
+        <div className="container" id="root" >
             
       <IconContext.Provider value={{ color: '#fff' }}>
       <Sidebarr />
-
-        <Nav className="navbar">
+        <Nav className="navbar navbar-container">
+        <h1 style={{color:"white",float:"left"}}>Aman Chauhan</h1>
+        <div class="menu-icon"><i class="fas fa-bars"></i></div>
 
 <NavMenu>
 
-{/* <NavLink to="/" activeStyle>
-<img src={require('../../images/gg.png')} alt='Home' />
-</NavLink> */}
 <NavLink to="/" >
     Home
 </NavLink>
@@ -36,26 +35,51 @@ import { IconContext } from 'react-icons';
 <NavLink to="/about" >
     About
 </NavLink>
-<NavLink to="/education" >
-    Education
-</NavLink>
-<NavLink to="/skills" >
-    Skills
-</NavLink>
+
 <NavLink to="/projects" >
     Projects
 </NavLink>
-<NavLink to="/profile_links" >
-    Profile Links
-</NavLink>
+
 {/* <NavBtnLink to="/signin">Sign In</NavBtnLink> */}
 
 </NavMenu>
 {/* <NavBtn>
     <NavBtnLink to="/signin">Sign In</NavBtnLink>
 </NavBtn> */}
-
+<a href="drive-link-here" className="btn-mobile btn--primary">
+<button class="btn btn--outline btn--medium">Resume</button>
+</a>
 </Nav>
+
+
+{/* <nav class="navbar">
+
+<Sidebarr />
+
+    <div class="navbar-container">
+   
+        <a class="navbar-logo" href="/">
+            Aman Chauhan<i class="fab fa-typo3"></i>
+            </a>
+        
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+            </div>
+      
+        <ul className="nav-menu">
+        <h1>sdfds</h1>
+            <li class="nav-item"><a class="nav-links" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-links" href="/about">About</a></li>
+            <li class="nav-item"><a class="nav-links" href="/projects">Projects</a></li>
+            <li>
+                
+        <a href="https://drive.google.com/file/d/1OwprR-2_KJOOH07qpJJtlbMsa_xE_lKY/view" class="nav-links-mobile">Download Resume</a>
+        </li>
+            </ul>
+            <a href="https://drive.google.com/file/d/1OwprR-2_KJOOH07qpJJtlbMsa_xE_lKY/view" class="btn-mobile"><button class="btn btn--outline btn--medium">Download Resume</button>
+            </a>
+        </div>
+</nav> */}
         </IconContext.Provider>
         </div>
     )
