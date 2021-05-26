@@ -50,7 +50,7 @@ Regression ,Clustering ,Classification of data.
     <div class="cards__wrapper">
       <ul class="cards__items">
         <li class="cards__item">
-          <a class="cards__item__link" href="https://luff-chat.web.app/">
+          <a class="cards__item__link" href="/">
             <figure class="cards__item__pic-wrap" data-category="MERN App">
             <img class="cards__item__img" alt="Travel" src="https://cdn.discordapp.com/attachments/725022555273953282/844964395402395648/unknown.png"/>
             </figure>
@@ -60,12 +60,12 @@ Regression ,Clustering ,Classification of data.
             </a>
             </li>
             
-             <li class="cards__item"><a class="cards__item__link" href="https://luff-shortclips.web.app/">
-               <figure class="cards__item__pic-wrap" data-category="MERN App"><img class="cards__item__img" alt="Travel" src="https://cdn.discordapp.com/attachments/725022555273953282/844965664213303296/unknown.png"/>
+             <li class="cards__item"><a class="cards__item__link" href="https://annadata-314714.web.app/">
+               <figure class="cards__item__pic-wrap" data-category="MERN App"><img class="cards__item__img" alt="Travel" src="https://media.discordapp.net/attachments/827789384031273021/847222969738461245/unknown.png?width=518&height=600"/>
 
                </figure>
-             <div class="cards__item__info"><h5 class="cards__item__text">Annadata: This is a app where you can send food to a needy person.This website aims at helping those who needs food.We can collect food
-from places that has excess of food and can supply it to the needy.</h5>
+             <div class="cards__item__info"><h5 class="cards__item__text">Annadata: This is a web app where you can send food to a needy person.This website aims at helping those who needs food.We can collect food
+from places and can supply it to the needy.</h5>
              </div>
              </a>
              </li>

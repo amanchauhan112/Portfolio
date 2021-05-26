@@ -5,7 +5,7 @@
 
 .text{
     background-color: rgb(70, 70, 138);
-    opacity: 80%;
+    /* opacity: 80%; */
     border-radius: 10%;
     padding: 4%;
     color: aliceblue;
