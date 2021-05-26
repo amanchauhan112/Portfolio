@@ -9,4 +9,51 @@
     border-radius: 10%;
     padding: 4%;
     color: aliceblue;
+    height: 20%;
+    display:flex;
+    /* float: left; */
 }
+
+.myimg
+{
+  width:300px;
+  height:350px;
+  float:right;
+  border-radius:20%;
+  margin-right:60px;
+}
+
+.img_text{
+    max-width: 1000px;
+    }
+    
+    .heeh {
+        padding-top: 100px;
+        color: #fff;
+        font-size: 100px;
+        margin-top: -100px;
+      }
+      
+@media screen and (max-width:900px) {
+  .text{
+      width: 60%;
+  }
+}
+@media screen and (max-width:700px) {
+    .myimg .text .content{
+    position: fixed;
+        margin: 10%;
+    }
+    .text{
+        width: 80%;
+        margin: 10px;
+    }
+    .myimg_div{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    }
+
+  }
+
