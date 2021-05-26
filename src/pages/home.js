@@ -19,7 +19,7 @@ const Home = () => {
 
       <p>
         <br></br>
-<h1 className="subheading heeh">Hllo , I am Aman Chauhan</h1>
+<h1 className="subheading heeh">Hello , I am Aman Chauhan</h1>
 <br></br>
 <p className="subheading">Web Devloper & Competitive Programmer </p>
 {/* <p className="subheading"><i>HTML_CSS,JS,REACTJS</i></p> */}
