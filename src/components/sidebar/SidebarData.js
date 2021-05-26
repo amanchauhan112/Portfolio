@@ -17,27 +17,9 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
-    title: 'Education',
-    path: '/Education',
-    icon: <FaIcons.FaCartPlus />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Skills',
-    path: '/Skills',
-    icon: <IoIcons.IoMdPeople />,
-    cName: 'nav-text'
-  },
-  {
     title: 'Projects',
     path: '/Projects',
     icon: <FaIcons.FaEnvelopeOpenText />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Profile Links',
-    path: '/Profile_links',
-    icon: <IoIcons.IoMdHelpCircle />,
     cName: 'nav-text'
   }
 ];

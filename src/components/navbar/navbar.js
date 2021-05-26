@@ -5,7 +5,7 @@ import {
     // Bars,
     NavMenu,
     // NavBtn,
-    // NavBtnLink
+    NavBtnLink
   } from './navbarElements';
   import Sidebarr from '../sidebar/Sidebar';
 
@@ -22,9 +22,10 @@ import { IconContext } from 'react-icons';
             
       <IconContext.Provider value={{ color: '#fff' }}>
       <Sidebarr />
+
         <Nav className="navbar navbar-container">
         <h1 style={{color:"white",float:"left"}}>Aman Chauhan</h1>
-        <div class="menu-icon"><i class="fas fa-bars"></i></div>
+
 
 <NavMenu>
 
@@ -40,15 +41,11 @@ import { IconContext } from 'react-icons';
     Projects
 </NavLink>
 
-{/* <NavBtnLink to="/signin">Sign In</NavBtnLink> */}
 
 </NavMenu>
-{/* <NavBtn>
-    <NavBtnLink to="/signin">Sign In</NavBtnLink>
-</NavBtn> */}
-<a href="drive-link-here" className="btn-mobile btn--primary">
-<button class="btn btn--outline btn--medium">Resume</button>
-</a>
+
+<a className="resume" href="https://console.firebase.google.com/">Resume</a>
+
 </Nav>
 
 
@@ -69,7 +66,7 @@ import { IconContext } from 'react-icons';
         <ul className="nav-menu">
         <h1>sdfds</h1>
             <li class="nav-item"><a class="nav-links" href="/">Home</a></li>
-            <li class="nav-item"><a class="nav-links" href="/about">About</a></li>
+            <li class="nav-item"><a class="nav-links" href="/about">Aout</a></li>
             <li class="nav-item"><a class="nav-links" href="/projects">Projects</a></li>
             <li>
                 
