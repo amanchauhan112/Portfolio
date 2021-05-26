@@ -4,12 +4,15 @@ import myimg from '../images/my.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin ,faGithub,faWordpress,faTwitter,faFacebook} from '@fortawesome/free-brands-svg-icons'
 import '../css/style.css';
+import './projects.css'
 
 const About = () => {
   return (
    <div className="div">
-      <h1 className="heading">About</h1>
-      <h1 className="subheading">I'm Aman Chauhan ,a web Devloper who uses React to devlop websites</h1>
+      {/* <h1 className="heading">About</h1> */}
+
+      {/* <h1 className="subheading">I'm Aman Chauhan ,a web Devloper who uses React to devlop websites</h1> */}
+      <h1 className="subheading">Who Am I?</h1>
 <a href="https://github.com/amanchauhan112">
       <FontAwesomeIcon icon={faLinkedin} style={{color:"white"}}/> </a>
       &emsp;
@@ -24,9 +27,12 @@ const About = () => {
       &emsp;
       <a  href="https://m.facebook.com/aman.chauhan.9809">
       <FontAwesomeIcon icon={faFacebook} style={{color:"white"}}/></a>
-
+      <div className="img_text">
+        <div className="myimg_div">
+      <img  src={myimg} className="myimg" alt="myPic"/> 
+      </div>
 <div  className="content" style={{width:"500px",marginTop:"50px"}}>
-      <p className="content font text" style={{float:"left"}}>I currently am a student of GTBIT.I startes d my web dev journey in my 2nd semester      
+      <p className="font text" >I currently am a student of GTBIT.I startes d my web dev journey in my 2nd semester      
      , that time I only knew HTML & css .I created websites using that and also I learnt Bootstrap.
      Today I use ReactJS to devlop Websites.
      I specialise in creating beautiful websites using best practice accesibility and latest web standards.
@@ -34,8 +40,8 @@ const About = () => {
 
         </p>
       </div>
-        <img  src={myimg} style={{width:"300px",height:"350px",float:"right",borderRadius:"20%",marginRight:"60px"}} alt="myPic"/> 
-     
+       
+      </div>
     </div>
   );
 };

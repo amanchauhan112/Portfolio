@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/heading.css';
-import './home.css'
+import '../css/style.css';
+
 const Home = () => {
 
   // function App() {
@@ -22,7 +23,7 @@ const Home = () => {
 <br></br>
 <p className="subheading">Web Devloper & Competitive Programmer </p>
 {/* <p className="subheading"><i>HTML_CSS,JS,REACTJS</i></p> */}
-<p className="subheading"><i>uses MERN Stack</i></p>
+<p className="subheading"><i>I create websites using MERN Stack</i></p>
 {/* <h3 className="subheading">Email</h3>
 <center>
 <hr style={{color:"white",width:"240px"}}/>

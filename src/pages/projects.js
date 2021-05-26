@@ -9,19 +9,8 @@ const Projects = () => {
     <div className="div" >
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous"></link>
       <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&amp;display=swap" rel="stylesheet"></link>
-<h1 className="heading">Projects</h1>
-{/* <hr style={{color:"white"}}/> */}
+
 {/* 
-<br></br>
-
-<h1 className="subheading">ANNADATA | Full-Stack</h1>
-<hr style={{color:"white",width:"350px"}}/>
-
-<p className="content">
-• This website aims at helping those who needs food.We can collect food
-from places that has excess of food and can supply it to the needy.
-</p>
-<br></br>
 
 <h1 className="subheading">TRASHSETGO | Full-Stack</h1>
 <hr style={{color:"white",width:"380px"}}/>
@@ -54,6 +43,7 @@ take it to nearby hospital or clinic.
 • Machine Learning A-z course from Udemy . In this I learned about
 Regression ,Clustering ,Classification of data.
 </p> */}
+
 <div class="cards">
   {/* <h1>Check out My Work.</h1> */}
   <div class="cards__container">
@@ -65,7 +55,7 @@ Regression ,Clustering ,Classification of data.
             <img class="cards__item__img" alt="Travel" src="https://cdn.discordapp.com/attachments/725022555273953282/844964395402395648/unknown.png"/>
             </figure>
             <div class="cards__item__info">
-              <h5 class="cards__item__text">Luff-Chat: Global Chat app .Hop in with random people Around the world, chat with them make new friends and have fun.</h5>
+              <h5 class="cards__item__text">Let's-Chat: Global Chat app .Hop in with random people Around the world, chat with them make new friends and have fun.</h5>
             </div>
             </a>
             </li>
@@ -74,7 +64,8 @@ Regression ,Clustering ,Classification of data.
                <figure class="cards__item__pic-wrap" data-category="MERN App"><img class="cards__item__img" alt="Travel" src="https://cdn.discordapp.com/attachments/725022555273953282/844965664213303296/unknown.png"/>
 
                </figure>
-             <div class="cards__item__info"><h5 class="cards__item__text">Luff-ShortClips: This is a app where you can post clips that can be sent by everyone. So Its time to open your camera and record a video to share with the world.</h5>
+             <div class="cards__item__info"><h5 class="cards__item__text">Annadata: This is a app where you can send food to a needy person.This website aims at helping those who needs food.We can collect food
+from places that has excess of food and can supply it to the needy.</h5>
              </div>
              </a>
              </li>
@@ -106,20 +97,20 @@ Regression ,Clustering ,Classification of data.
                   <section class="social-media">
                     <div class="social-media-wrap">
                       <div class="footer-logo">
-                        <a class="social-logo" href="/">
-                          Harsh Tanwar<i class="fab fa-typo3"></i>
-                          </a>
+                        <a class="social-logo" href="/">Aman Chauhan</a>
                       </div>
 
-                          <small class="website-rights">Luffyguy © 2021</small>
+                          <small class="website-rights">Aman-Portfolio © 2021</small>
                          
                           <div class="social-icons">
-                            <a class="social-icon-link linkedin" href="https://github.com/luffyguy" aria-label="Github"><i class="fab fa-github" aria-hidden="true"></i></a>
-                            <a class="social-icon-link facebook" href="https://www.facebook.com/harsh.tanwar.5811" aria-label="Facebook"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                            <a class="social-icon-link facebook" href="https://www.facebook.com/harsh.tanwar.5811" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a class="social-icon-link instagram" href="https://www.instagram.com/_harshtanwar_/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                            <a class="social-icon-link twitter" href="https://twitter.com/harshtanwar25" aria-label="LinkedIn"><i class="fab fa-twitter"></i></a>
+                            <a class="social-icon-link linkedin" href="https://github.com/amanchauhan112" aria-label="Github"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            <a class="social-icon-link facebook" href="https://www.linkedin.com/in/aman-chauhan-2b51471b6/" aria-label="Facebook"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                            <a class="social-icon-link facebook" href="https://m.facebook.com/aman.chauhan.9809" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a class="social-icon-link instagram" href="https://trashsetgo.wordpress.com " aria-label="Instagram"><i class="fab fa-wordpress"></i></a>
+                            <a class="social-icon-link twitter" href="https://twitter.com/Amanchauhan2801" aria-label="LinkedIn"><i class="fab fa-twitter"></i></a>
                           </div>
+
+
             </div>
             </section>
             </div>
