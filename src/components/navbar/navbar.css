@@ -1,22 +1,22 @@
 .navbar {
-    background-color: #060b26;
-    height: 6px;
-    display: flex;
+    /* background-color: #060b26; */
+    /* height: 6px; */
+    /* display: flex; */
     /* justify-content: start; */
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
 
     /* justify-content:space-around; */
-    justify-content:center;
+    /* justify-content:center; */
 
     /* align-items: center; */
     /* position:fixed; */
    
   }
   .navbar {
-    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
     /* height: 80px; */
-    display: flex;
-    justify-content: space-evenly;
+    /* display: flex; */
+    /* justify-content: space-evenly; */
     /* align-items: center;
     font-size: 1.2rem;
     position: sticky;
@@ -30,7 +30,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    /* height: 80px; */
     /* max-width: 1500px; */
   }
   

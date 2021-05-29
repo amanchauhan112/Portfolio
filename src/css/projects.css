@@ -10,10 +10,8 @@
     rgba(76, 0, 130, 0.6),
     rgba(238, 130, 238, 0.7)
   ); */
-}
-
-h1 {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .cards__container {
@@ -22,12 +20,13 @@ h1 {
   align-items: center;
   max-width: 500px;
   width: 90%;
-  margin: 0 auto;
+  margin: 10 auto;
 }
 
 .cards__wrapper {
   position: relative;
   margin: 100px 0 45px;
+  justify-content: center;
 }
 
 .cards__items {
@@ -105,7 +104,7 @@ h1 {
 }
 
 .cards__item__info {
-  padding: 20px 30px 30px;
+  padding: 12px 13px 13px;
 }
 
 .cards__item__text {
@@ -115,6 +114,12 @@ h1 {
   color: white;
   font-size: 18px;
   line-height: 24px;
+}
+
+.cards__div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 1200px) {

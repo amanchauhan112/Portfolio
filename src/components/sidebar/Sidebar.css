@@ -4,7 +4,7 @@
     /* background-color:blueviolet; */
     opacity:80%;
     width:20%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     position: fixed;
@@ -46,8 +46,8 @@
   .nav-menu {
     /* display: flex; */
     /* flex-direction: column; */
-    /* width: 10%; */
-    height: 22vh;
+    width: 30%;
+    height: 100vh;
     position: absolute;
     top: 50px;
     left: -100%;
@@ -107,4 +107,5 @@
 
 .nav-text a:hover {
   background-color: blue;
+  border-radius: 20px;
 }

@@ -10,7 +10,6 @@ import {
   import Sidebarr from '../sidebar/Sidebar';
 
 import './navbar.css';
-import './nav.css';
 
 import { IconContext } from 'react-icons';
 
@@ -44,7 +43,7 @@ import { IconContext } from 'react-icons';
 
 </NavMenu>
 
-<a className="resume" href="https://console.firebase.google.com/">Resume</a>
+<a className="resume" href="https://drive.google.com/file/d/1Ra-6ukC8xPriTC9KHWpi9nrX08zO8_A5/view?usp=sharing">Resume</a>
 
 </Nav>
 

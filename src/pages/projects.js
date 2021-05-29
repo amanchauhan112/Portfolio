@@ -1,12 +1,12 @@
 import React from 'react';
-import '../css/heading.css';
-import './projects.css';
-import './footer.css';
+import '../css/projects.css';
+import '../css/footer.css';
 
 const Projects = () => {
   return (
     
-    <div className="div" >
+    <div className="project_main_div" style={{width:`100%`}} >
+
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous"></link>
       <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&amp;display=swap" rel="stylesheet"></link>
 
@@ -49,6 +49,7 @@ Regression ,Clustering ,Classification of data.
   <div class="cards__container">
     <div class="cards__wrapper">
       <ul class="cards__items">
+        <div class="cards__div">
         <li class="cards__item">
           <a class="cards__item__link" href="/">
             <figure class="cards__item__pic-wrap" data-category="MERN App">
@@ -59,7 +60,8 @@ Regression ,Clustering ,Classification of data.
             </div>
             </a>
             </li>
-            
+            </div>
+            <div>
              <li class="cards__item"><a class="cards__item__link" href="https://annadata-314714.web.app/">
                <figure class="cards__item__pic-wrap" data-category="MERN App"><img class="cards__item__img" alt="Travel" src="https://media.discordapp.net/attachments/827789384031273021/847222969738461245/unknown.png?width=518&height=600"/>
 
@@ -69,6 +71,7 @@ from places and can supply it to the needy.</h5>
              </div>
              </a>
              </li>
+             </div>
              {/* <li class="cards__item"><a class="cards__item__link" href="https://luff-dating-21bf1.web.app/"><figure class="cards__item__pic-wrap" data-category="MERN App"><img class="cards__item__img" alt="Travel" src="https://cdn.discordapp.com/attachments/725022555273953282/844965264511860776/unknown.png"></figure><div class="cards__item__info"><h5 class="cards__item__text">Luff-Dating: This is a dating platform where people can meet and if they like each other, those two individuals may become lovers one day.</h5></div></a></li> */}
             </ul>
 

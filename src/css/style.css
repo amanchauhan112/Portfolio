@@ -3,40 +3,139 @@
     font-size: 25px;
 }
 
+.heading{
+    text-align: center;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aqua;
+    /* background-color: yellow; */
+    border-radius: 20%;
+margin-left: 40%;
+margin-right: 40%;
+}
+
+body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+        background-image: linear-gradient(236deg,pink, blue);
+        /* background-image:url("https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBkYXJrfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"); */
+        /* height: 150vh; */
+       background-size: cover;
+    }
+
+.subheading{
+        color: white;
+        font-family: serif;
+
+        font-size: 40px;
+    }
+
+.about_text_div{
+        color:rgb(28, 245, 227);
+        font-size: 25px;
+        width: 90%;
+        text-align: center;
+        display: block;
+        justify-content: center;
+    }
+
 .text{
     background-color: rgb(70, 70, 138);
-    /* opacity: 80%; */
     border-radius: 10%;
     padding: 4%;
     color: aliceblue;
-    height: 20%;
-    display:flex;
-    /* float: left; */
 }
 
 .myimg
 {
-  width:300px;
-  height:350px;
+  width:400px;
+  height:300px;
   float:right;
   border-radius:20%;
-  margin-right:60px;
+  /* margin-right:60px; */
 }
-
-.img_text{
-    max-width: 1000px;
-    }
     
     .heeh {
-        padding-top: 100px;
+        /* padding-top: 100px; */
         color: #fff;
-        font-size: 100px;
-        margin-top: -100px;
+        font-size: 80px;
+        /* margin-top: -100px; */
       }
+
+
+
+      .home_main_div{
+        text-align:center;
+        background-image:url(https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydGZvbGlvfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60);
+        height:110%;
+        background-size:cover;
+        background-repeat:no-repeat;
+        /* height: auto; */
+        /* background-position:center; */
+        /* width:100%; */
+        background-color: yellow;
+
+      }
+
+
+      @media screen and (max-width:600px){
+          .home_main_div{
+              height:700px;
+          }
+      }
+
+      .about_main_div{
+        text-align:center;
+        background-image:url(https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cG9ydGZvbGlvfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60);
+        height:110%;
+       
+        background-size:cover;
+        background-repeat:no-repeat;
+        /* height: auto; */
+        /* background-position:center; */
+        /* width:100%; */
+        /* background-color: yellow; */
+
+      }
+
+
+      @media screen and (max-width:600px){
+          .about_main_div{
+              height:700px;
+          }
+      }
+
+
+      .project_main_div{
+        text-align:center;
+        background-image:url(https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBvcnRmb2xpb3xlbnwwfDF8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60);
+        background-size:cover;
+        background-repeat:no-repeat;
+        /* height: auto; */
+        background-position:center;
+        /* width:100%; */
+        /* background-color: yellow; */
+
+        /* height:600px; */
+
+      }
+
+
+      /* @media screen and (max-width:600px){
+          .project_main_div{
+              height:600px;
+          }
+      } */
+
+
+
+
+
       
 @media screen and (max-width:900px) {
   .text{
-      width: 60%;
+      width: 100%;
   }
 }
 @media screen and (max-width:700px) {
@@ -45,7 +144,7 @@
         margin: 10%;
     }
     .text{
-        width: 80%;
+        width: 100%;
         margin: 10px;
     }
     .myimg_div{
@@ -57,3 +156,22 @@
 
   }
 
+  @media screen and (max-width:400px) {
+    .text{
+        font-size: 20px;
+        margin: 10x;
+    }
+    .myimg{
+
+        width: 60%;
+        height: 60%;
+        
+    }
+  }
+
+      @media screen and (min-width:900px){
+       .about_text_div{
+           width: 60%;
+            margin-bottom: 5px;
+        }
+      }
