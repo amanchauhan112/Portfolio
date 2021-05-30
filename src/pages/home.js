@@ -1,5 +1,8 @@
 import React from 'react';
 import '../css/style.css';
+import About from './about';
+import Projects from './projects';
+
 
 const Home = () => {
 
@@ -12,7 +15,8 @@ const Home = () => {
   //   );
   // }
   return (
-    <div className="home_main_div" style={{}}>
+    <>
+    <div className="home_main_div">
  
       
         <br></br>
@@ -21,8 +25,11 @@ const Home = () => {
 <p className="subheading">Web Devloper & Competitive Programmer <br/>
 I create websites using MERN Stack</p>
 
-    
     </div>
+    <About/>
+
+    <Projects/>
+    </>    
   );
 };
 

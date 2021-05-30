@@ -2,10 +2,7 @@ import React, { useState } from 'react';
 import {
     Nav,
     NavLink,
-    // Bars,
     NavMenu,
-    // NavBtn,
-    NavBtnLink
   } from './navbarElements';
   import Sidebarr from '../sidebar/Sidebar';
 
@@ -23,20 +20,20 @@ import { IconContext } from 'react-icons';
       <Sidebarr />
 
         <Nav className="navbar navbar-container">
-        <h1 style={{color:"white",float:"left"}}>Aman Chauhan</h1>
+        <h1  ><a className="myname" href="/">Aman Chauhan</a></h1>
 
 
 <NavMenu>
 
-<NavLink to="/" >
+<NavLink to="/" className="nav_items">
     Home
 </NavLink>
 
-<NavLink to="/about" >
+<NavLink to="/about" className="nav_items" >
     About
 </NavLink>
 
-<NavLink to="/projects" >
+<NavLink to="/projects" className="nav_items" >
     Projects
 </NavLink>
 
