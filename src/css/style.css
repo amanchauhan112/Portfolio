@@ -87,7 +87,7 @@ height: 400px;
         text-align:center;
         background-image:url(https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cG9ydGZvbGlvfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60);
         /* height:150%; */
-       
+       /* margin-bottom: 10px; */
         background-size:cover;
         background-repeat:no-repeat;
         height: 100vh;
@@ -95,41 +95,18 @@ height: 400px;
 /* flex-direction: column; */
 /* justify-content: center;       */
 }
-
-
-
-
-      @media screen and (max-width:600px){
-          .about_main_div{
-              height:720px;
-          }
-      }
-
-
       .project_main_div{
         text-align:center;
         background-image:url(https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBvcnRmb2xpb3xlbnwwfDF8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60);
         background-size:cover;
         background-repeat:no-repeat;
-        /* height: auto; */
+        /* height: 10000px; */
         background-position:center;
         /* width:100%; */
-        /* background-color: yellow; */
 
-        /* height:600px; */
+
 
       }
-
-
-      @media screen and (max-width:600px){
-          .project_main_div{
-              height:600px;
-          }
-      }
-
-
-
-
 
       
 @media screen and (max-width:900px) {
@@ -146,49 +123,11 @@ height: 400px;
         width: 98%;
         margin: 5px;
     }
-    .myimg_div{
-    /* width: 100%; */
-    /* display: flex; */
-    /* justify-content: center; */
     }
-
-  }
 
   @media screen and (max-width:400px) {
     .text{
         font-size: 20px;
-        margin: 10x;
-    }
-    .myimg{
-
-        width: 60%;
-        height: 60%;
-        
+        /* margin: 10x; */
     }
   }
-
-      @media screen and (min-width:800px){
-       .about_text_div{
-           /* width: 92%; */
-            /* margin-bottom: 5px; */
-        }
-        .about_main_div{
-            height: 80vh;
-        }
-      }
-
-      @media screen and (min-width:1000px){
- 
-         .about_main_div{
-             height: 50vh;
-         }
-       }
- 
-      @media screen and (max-width:1000px){
-       .about_text_div{
-            width: 90%;
-         }
-    
-       }
- 
-       
