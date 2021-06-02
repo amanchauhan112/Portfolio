@@ -34,10 +34,10 @@ body {
 .about_text_div{
         color:rgb(28, 245, 227);
         font-size: 25px;
-        width: 90%;
+        /* width: 90%; */
         text-align: center;
-        display: block;
-        justify-content: center;
+        /* display: block; */
+        /* justify-content: center; */
     }
 
 .text{
@@ -45,13 +45,17 @@ body {
     border-radius: 10%;
     padding: 4%;
     color: aliceblue;
+    width: 98%;
+
 }
 
 .myimg
 {
-  width:400px;
-  height:300px;
-  float:right;
+    margin-top: 20px;
+
+  width:200px;
+  height:200px;
+  /* float:right; */
   border-radius:20%;
   /* margin-right:60px; */
 }
@@ -88,7 +92,7 @@ body {
       .about_main_div{
         text-align:center;
         background-image:url(https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cG9ydGZvbGlvfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60);
-        height:110%;
+        /* height:150%; */
        
         background-size:cover;
         background-repeat:no-repeat;
@@ -102,7 +106,7 @@ body {
 
       @media screen and (max-width:600px){
           .about_main_div{
-              height:700px;
+              height:720px;
           }
       }
 
@@ -135,7 +139,7 @@ body {
       
 @media screen and (max-width:900px) {
   .text{
-      width: 100%;
+      width: 98%;
   }
 }
 @media screen and (max-width:700px) {
@@ -144,14 +148,13 @@ body {
         margin: 10%;
     }
     .text{
-        width: 100%;
-        margin: 10px;
+        width: 98%;
+        margin: 5px;
     }
     .myimg_div{
-    width: 100%;
-    display: flex;
-    margin-top: 20px;
-    justify-content: center;
+    /* width: 100%; */
+    /* display: flex; */
+    /* justify-content: center; */
     }
 
   }
@@ -171,7 +174,7 @@ body {
 
       @media screen and (min-width:900px){
        .about_text_div{
-           width: 60%;
-            margin-bottom: 5px;
+           /* width: 92%; */
+            /* margin-bottom: 5px; */
         }
       }

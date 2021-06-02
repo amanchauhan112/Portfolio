@@ -26,13 +26,13 @@ const About = () => {
     <a  href="https://m.facebook.com/aman.chauhan.9809">
       <FontAwesomeIcon icon={faFacebook} style={{color:"white"}}/></a>
     </div>
+    <div  className="about_text_div">
     
     <div className="img_text">
        <div className="myimg_div">
           <img  src={myimg} className="myimg" alt="myPic"/> 
       </div>
 
-      <div  className="about_text_div">
            <p className="font text" >I currently am a student of GTBIT.I started my web dev journey in my 2nd semester      
           , that time I only knew HTML & css .I created websites using that and also I learnt Bootstrap.
           Today I use ReactJS to devlop Websites.
