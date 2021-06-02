@@ -53,7 +53,7 @@ Regression ,Clustering ,Classification of data.
         <li class="cards__item">
           <a class="cards__item__link" href="/">
             <figure class="cards__item__pic-wrap" data-category="MERN App">
-            <img class="cards__item__img" alt="Travel" src="https://cdn.discordapp.com/attachments/725022555273953282/844964395402395648/unknown.png"/>
+            <img class="cards__item__img" alt="Travel" src="https://media.discordapp.net/attachments/827789384031273021/849649393384554506/unknown.png"/>
             </figure>
             <div class="cards__item__info">
               <h5 class="cards__item__text">Let's-Chat: Global Chat app .Hop in with random people Around the world, chat with them make new friends and have fun.</h5>
@@ -72,18 +72,22 @@ from places and can supply it to the needy.</h5>
              </a>
              </li>
              </div>
-             {/* <li class="cards__item"><a class="cards__item__link" href="https://luff-dating-21bf1.web.app/"><figure class="cards__item__pic-wrap" data-category="MERN App"><img class="cards__item__img" alt="Travel" src="https://cdn.discordapp.com/attachments/725022555273953282/844965264511860776/unknown.png"></figure><div class="cards__item__info"><h5 class="cards__item__text">Luff-Dating: This is a dating platform where people can meet and if they like each other, those two individuals may become lovers one day.</h5></div></a></li> */}
+             <li class="cards__item">
+             <a class="cards__item__link" href="https://understanding450.web.app/">
+               <figure class="cards__item__pic-wrap" data-category="MERN App">
+                 <img class="cards__item__img" alt="Travel" src="https://media.discordapp.net/attachments/827789384031273021/849654133204189234/unknown.png?width=468&height=406"/>
+
+                 </figure>
+                  <div class="cards__item__info">
+                    <h5 class="cards__item__text">Understanding 450: This is a platform where students can take help for DSA Sheet i.e. Final 450 Sheet
+                    made by Love Babbar to practice DSA.
+                    </h5>
+                  </div>
+                  </a>
+                  </li>
             </ul>
 
-            {/* <ul class="cards__items">
-            <li class="cards__item"><a class="cards__item__link" href="https://github.com/Luffyguy/Luff-Notes"><figure class="cards__item__pic-wrap" data-category="MERN App"><img class="cards__item__img" alt="Travel" src="https://i.imgur.com/nEH25nJ.png"></figure><div class="cards__item__info"><h5 class="cards__item__text">Luff-Notes: online Notes maker, lets you create, edit and delete Notes</h5></div></a></li>
-            <li class="cards__item"><a class="cards__item__link" href="https://github.com/Luffyguy/Luff-Docs"><figure class="cards__item__pic-wrap" data-category="MERN App"><img class="cards__item__img" alt="Travel" src="https://i.imgur.com/FL7O1Cr.png"></figure><div class="cards__item__info"><h5 class="cards__item__text">Luff-Docs: online Ducument Editor, lets you Downoad and Print pages </h5></div></a></li>
-            </ul> */}
-    
-            {/* <ul class="cards__items">
-            <li class="cards__item"><a class="cards__item__link" href="https://github.com/Luffyguy/Covid-Tracker"><figure class="cards__item__pic-wrap" data-category="Reactjs App"><img class="cards__item__img" alt="Travel" src="https://i.imgur.com/UezoUu3.png"></figure><div class="cards__item__info"><h5 class="cards__item__text">Covid Tracker: Stay updated about the Covid cases in India</h5></div></a></li>
-            <li class="cards__item"><a class="cards__item__link" href="https://github.com/Luffyguy/Luffy-Desktop-Assistant"><figure class="cards__item__pic-wrap" data-category="Adventure"><img class="cards__item__img" alt="Travel" src="https://i.imgur.com/xMq9pVR.png"></figure><div class="cards__item__info"><h5 class="cards__item__text">Luffy-Bot: your personal Desktop Assistant, It interacts with use, plays songs and has many games included.</h5></div><a></li>
-            </ul> */}
+          
 
             </div>
             </div>
