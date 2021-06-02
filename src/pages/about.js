@@ -3,10 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin ,faGithub,faWordpress,faTwitter,faFacebook} from '@fortawesome/free-brands-svg-icons'
 import '../css/style.css';
 import '../css/projects.css';
+import about_bg from "../images/about_bg.jpg";
 
 const About = () => {
   return (
-    <div className="about_main_div"  >  
+    <div className="about_main_div"  style={{ backgroundImage: `url(${about_bg})` }}  >  
 
     <div><h1 className="subheading">Who Am I?</h1></div>
 

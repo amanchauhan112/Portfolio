@@ -15,15 +15,15 @@ function App() {
     <Navbar/>
 
     <Switch>
-      {/* <Route path="/" exact component={Home}></Route> */}
-      {/* <Route path='/about' exact component={About} /> */}
-      {/* <Route path='/projects' exact  component={Projects} /> */}
+      <Route path="/" exact component={Home}></Route>
+      <Route path='/about' exact component={About} />
+      <Route path='/projects' exact  component={Projects} />
     </Switch>
 
-    <Home/>
-    <About/>
+    {/* <Home/> */}
+    {/* <About/>
 
-    <Projects/>
+    <Projects/> */}
     {/* <Footer/> */}
     </Router>
   );
