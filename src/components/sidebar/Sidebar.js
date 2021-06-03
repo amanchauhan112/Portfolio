@@ -12,7 +12,6 @@ import React, { useState } from 'react';
 import './Sidebar.css';
 import * as AiIcons from 'react-icons/ai';
 import { SidebarData } from '../sidebar/SidebarData';
-// import './navbar.css';
 
 import { IconContext } from 'react-icons';
 import {Link} from 'react-router-dom';
@@ -34,7 +33,7 @@ import * as FaIcons from 'react-icons/fa';
 <FaIcons.FaBars onClick={showSidebar} className="menu-bars" style={{'margin':'10px'}}/>
 
 {/* </Link> */}
-<nav className={sidebar ? 'nav-menu active' : 'nav-menu'} >
+<nav className={sidebar ? 'nav-menu active' : 'nav-menu'}  > {/*onMouseLeave={showSidebar} */}
           <ul className='nav-menu-items' onClick={showSidebar}>
             {/* <li className='navbar-toggle'> */}
             {/* <div class="menu-icon"><i class="fas fa-bars"></i></div> */}
@@ -45,6 +44,7 @@ import * as FaIcons from 'react-icons/fa';
             {SidebarData.map((item, index) => {
               return (
                 <li key={index} className={item.cName}>
+               
                   <Link to={item.path}>
                     {item.icon}
                     <span>{item.title}</span>
@@ -52,6 +52,13 @@ import * as FaIcons from 'react-icons/fa';
                 </li>
               );
             })}
+   <li className="nav-text nav-text-resume">
+                  <a href="https://drive.google.com/file/d/1Ra-6ukC8xPriTC9KHWpi9nrX08zO8_A5/view?usp=sharing">
+                <AiIcons.AiFillFilePdf />
+                  
+                    <span>Resume</span>
+                  </a>
+                </li>
           </ul>
         </nav>
      

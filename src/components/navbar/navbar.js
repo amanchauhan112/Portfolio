@@ -18,7 +18,7 @@ import { IconContext } from 'react-icons';
             
       <IconContext.Provider value={{ color: '#fff' }}>
       <Sidebarr />
-
+<div className="extra"></div>
         <Nav className="navbar navbar-container">
         <h1  ><a className="myname" href="/">Aman Chauhan</a></h1>
 

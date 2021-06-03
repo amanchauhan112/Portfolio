@@ -1,10 +1,13 @@
  .navbar-container {
-    width: 100%;
-
+    /* width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
+    /* min-width: 400px; */
+    /* overflow:hidden; */
+ 
   }
+
 .nav_items{
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 20px;
@@ -29,10 +32,46 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
     color: #010606;
   }
-  
+  .extra{
+    /* position: absolute; */
+    /* width: 200px; */
+  }
  .myname{
   color:white;
-  float:left;
+  /* float:left; */
   text-decoration: none;
 
  }
+
+ @media screen and (max-width:385px) {
+   .navbar-container{
+     /* justify-content: right; */
+   }
+   
+   .myname{
+/* float:right; */
+    font-size: 20px;
+    }
+    
+   .resume{
+    margin-left: 0px;
+  }
+  }
+
+  @media screen and (max-width:320px) {
+    .myname {
+      margin-left: 0px;
+   
+     }
+   
+    .resume{
+    display: none;
+   }
+   }
+   @media screen and (max-width:270px) {
+    .myname{
+   display: none;
+
+  }
+
+}
