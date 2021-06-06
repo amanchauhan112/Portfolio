@@ -22,7 +22,7 @@ const Home = () => {
         <br></br>
 <h1 className="subheading heeh">Hello , I am Aman Chauhan</h1>
 <br></br>
-<p className="subheading">Web Devloper & Competitive Programmer <br/>
+<p className="subheading">Web Developer & Competitive Programmer <br/>
 I create websites using MERN Stack</p>
 
     </div>

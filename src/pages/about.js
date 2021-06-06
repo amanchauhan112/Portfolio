@@ -35,8 +35,8 @@ const About = () => {
       </div>
 
            <p className="font text" >I currently am a student of GTBIT.I started my web dev journey in my 2nd semester      
-          , that time I only knew HTML & css .I created websites using that and also I learnt Bootstrap.
-          Today I use ReactJS to devlop Websites.
+          , that time I only knew HTML & CSS .I created websites using that and also I learnt Bootstrap.
+          Today I use ReactJS,NodeJS,MONGODB to devlop Websites.
           I specialise in creating beautiful websites using best practice accesibility and latest web standards.
           All my sites are loving and hand coded.
           </p>
