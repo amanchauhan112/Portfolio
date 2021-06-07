@@ -40,7 +40,7 @@ import { IconContext } from 'react-icons';
 
 </NavMenu>
 
-<a className="resume" href="https://drive.google.com/file/d/1Ra-6ukC8xPriTC9KHWpi9nrX08zO8_A5/view?usp=sharing">Resume</a>
+<a className="resume" href="https://drive.google.com/file/d/1fRAskMtln9DyIpC0xNjxnR9RAOi0VHyk/view?usp=sharing">Resume</a>
 
 </Nav>
 

@@ -51,7 +51,7 @@ Regression ,Clustering ,Classification of data.
       <ul class="cards__items">
         <div class="cards__div">
         <li class="cards__item">
-          <a class="cards__item__link" href="/">
+          <a class="cards__item__link" href="https://letus-chat.herokuapp.com/login">
             <figure class="cards__item__pic-wrap" data-category="MERN App">
             <img class="cards__item__img" alt="Travel" src="https://media.discordapp.net/attachments/827789384031273021/849649393384554506/unknown.png"/>
             </figure>

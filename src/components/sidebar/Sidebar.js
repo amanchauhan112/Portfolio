@@ -53,7 +53,7 @@ import * as FaIcons from 'react-icons/fa';
               );
             })}
    <li className="nav-text nav-text-resume">
-                  <a href="https://drive.google.com/file/d/1Ra-6ukC8xPriTC9KHWpi9nrX08zO8_A5/view?usp=sharing">
+                  <a href="https://drive.google.com/file/d/1fRAskMtln9DyIpC0xNjxnR9RAOi0VHyk/view?usp=sharing">
                 <AiIcons.AiFillFilePdf />
                   
                     <span>Resume</span>
