@@ -12,10 +12,10 @@ const About = () => {
     <div><h1 className="subheading">Who Am I?</h1></div>
 
     <div>
-    <a href="https://github.com/amanchauhan112"> 
+    <a href="https://www.linkedin.com/in/aman-chauhan-2b51471b6/"> 
       <FontAwesomeIcon icon={faLinkedin} style={{color:"white"}}/></a>
       &emsp;
-    <a href="https://www.linkedin.com/in/aman-chauhan-2b51471b6/">
+    <a href="https://github.com/amanchauhan112">
       <FontAwesomeIcon icon={faGithub} style={{color:"white"}}/></a>
       &emsp;
     <a  href="https://trashsetgo.wordpress.com">
