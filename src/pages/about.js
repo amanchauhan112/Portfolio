@@ -1,4 +1,4 @@
-import myimg from '../images/my.jpg';
+import myimg from '../images/my1.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin ,faGithub,faWordpress,faTwitter,faFacebook} from '@fortawesome/free-brands-svg-icons'
 import '../css/style.css';
@@ -12,8 +12,8 @@ const About = () => {
     <div><h1 className="subheading">Who Am I?</h1></div>
 
     <div>
-    <a href="https://github.com/amanchauhan112">
-      <FontAwesomeIcon icon={faLinkedin} style={{color:"white"}}/> </a>
+    <a href="https://github.com/amanchauhan112"> 
+      <FontAwesomeIcon icon={faLinkedin} style={{color:"white"}}/></a>
       &emsp;
     <a href="https://www.linkedin.com/in/aman-chauhan-2b51471b6/">
       <FontAwesomeIcon icon={faGithub} style={{color:"white"}}/></a>

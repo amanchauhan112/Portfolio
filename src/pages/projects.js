@@ -49,7 +49,9 @@ Regression ,Clustering ,Classification of data.
   <div class="cards__container">
     <div class="cards__wrapper">
       <ul class="cards__items">
+
         <div class="cards__div">
+
         <li class="cards__item">
           <a class="cards__item__link" href="https://letus-chat.herokuapp.com/login">
             <figure class="cards__item__pic-wrap" data-category="MERN App">
@@ -60,10 +62,13 @@ Regression ,Clustering ,Classification of data.
             </div>
             </a>
             </li>
+
             </div>
+
             <div>
+
              <li class="cards__item"><a class="cards__item__link" href="https://annadata-314714.web.app/">
-               <figure class="cards__item__pic-wrap" data-category="MERN App"><img class="cards__item__img" alt="Travel" src="https://media.discordapp.net/attachments/827789384031273021/847222969738461245/unknown.png?width=518&height=600"/>
+               <figure class="cards__item__pic-wrap" data-category="React App"><img class="cards__item__img" alt="Travel" src="https://media.discordapp.net/attachments/827789384031273021/847222969738461245/unknown.png?width=518&height=600"/>
 
                </figure>
              <div class="cards__item__info"><h5 class="cards__item__text">Annadata: This is a web app where you can send food to a needy person.This website aims at helping those who needs food.We can collect food
@@ -71,16 +76,31 @@ from places and can supply it to the needy.</h5>
              </div>
              </a>
              </li>
+
              </div>
+
              <li class="cards__item">
              <a class="cards__item__link" href="https://understanding450.web.app/">
-               <figure class="cards__item__pic-wrap" data-category="MERN App">
+               <figure class="cards__item__pic-wrap" data-category="React App">
                  <img class="cards__item__img" alt="Travel" src="https://media.discordapp.net/attachments/827789384031273021/849654133204189234/unknown.png?width=468&height=406"/>
 
                  </figure>
                   <div class="cards__item__info">
                     <h5 class="cards__item__text">Understanding 450: This is a platform where students can take help for DSA Sheet i.e. Final 450 Sheet
                     made by Love Babbar to practice DSA.
+                    </h5>
+                  </div>
+                  </a>
+                  </li>
+
+                  <li class="cards__item">
+             <a class="cards__item__link" href="https://festivalsind.web.app/">
+               <figure class="cards__item__pic-wrap" data-category="React App">
+                 <img class="cards__item__img" alt="Travel" src="https://media.discordapp.net/attachments/827789384031273021/865184927929597982/unknown.png?width=1440&height=655"/>
+
+                 </figure>
+                  <div class="cards__item__info">
+                    <h5 class="cards__item__text">Festivals:This site will help you to know about Indian festivals.
                     </h5>
                   </div>
                   </a>
