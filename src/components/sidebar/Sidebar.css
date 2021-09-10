@@ -28,7 +28,7 @@
   .nav-menu.active {
     left: 0;
     transition: 350ms;
-    height: 250px;
+    height: 310px;
     border-radius: 20px;
     margin-top: 1px;
     background: #242222;

@@ -9,6 +9,7 @@ import {
 import './navbar.css';
 
 import { IconContext } from 'react-icons';
+import { Link } from 'react-router-dom';
 
 
     function Navbar() {
@@ -18,9 +19,9 @@ import { IconContext } from 'react-icons';
             
       <IconContext.Provider value={{ color: '#fff' }}>
       <Sidebarr />
-<div className="extra"></div>
+{/* <div className="extra"></div> */}
         <Nav className="navbar navbar-container">
-        <h1  ><a className="myname" href="/">Aman Chauhan</a></h1>
+        <h1  ><a className="myname" href="/" >Aman Chauhan</a></h1>
 
 
 <NavMenu>
@@ -37,11 +38,11 @@ import { IconContext } from 'react-icons';
     Projects
 </NavLink>
 
-
 </NavMenu>
 
 <a className="resume" href="https://drive.google.com/file/d/1RlyXhXAIOjMMrHLbqXExRofm-TMTXAaU/view?usp=sharing">Resume</a>
 
+<Link to="/Aman's Portfolio.apk" className="resume" target="_blank" download style={{color:'yellow',textDecoration:"none",fontWeight:"600",background:"none"}}>(Apk)</Link>
 </Nav>
 
 
