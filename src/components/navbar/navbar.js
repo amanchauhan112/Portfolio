@@ -40,7 +40,7 @@ import { Link } from 'react-router-dom';
 
 </NavMenu>
 
-<a className="resume" href="https://drive.google.com/file/d/1t6SmZhA_3Nso3QzecE1xp9tYPd9F-2fc/view?usp=sharing">Resume</a>
+<a className="resume" href="https://drive.google.com/file/d/1EUaHEdzDbGspdGIAKLavQLbscAT2hSA0/view?usp=sharing">Resume</a>
 
 <Link to="/Aman's Portfolio.apk" className="resume" target="_blank" download style={{color:'yellow',textDecoration:"none",fontWeight:"600",background:"none"}}>(Apk)</Link>
 </Nav>
