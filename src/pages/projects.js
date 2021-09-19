@@ -67,12 +67,13 @@ Regression ,Clustering ,Classification of data.
 
             <div>
 
-             <li class="cards__item"><a class="cards__item__link" href="https://annadata-314714.web.app/">
-               <figure class="cards__item__pic-wrap" data-category="React App"><img class="cards__item__img" alt="Travel" src="https://media.discordapp.net/attachments/827789384031273021/847222969738461245/unknown.png?width=518&height=600"/>
+             <li class="cards__item"><a class="cards__item__link" href="https://topshop-b8262.web.app/">
+               <figure class="cards__item__pic-wrap" data-category="MERN App"><img class="cards__item__img" alt="Travel" src="https://media.discordapp.net/attachments/827789384031273021/889205115700002887/unknown.png?width=739&height=670"/>
 
                </figure>
-             <div class="cards__item__info"><h5 class="cards__item__text">Annadata: This is a web app where you can send food to a needy person.This website aims at helping those who needs food.We can collect food
-from places and can supply it to the needy.</h5>
+             <div class="cards__item__info"><h5 class="cards__item__text">TopShop : This is a <strong style={{fontWeight:"800"}}>shopping site</strong> , where users can go and buy items, also, they can add their own items as well. 
+             It includes <strong style={{fontWeight:"800"}}>Razorpay Payment Gateway</strong> to pay for the required item.
+             </h5>
              </div>
              </a>
              </li>

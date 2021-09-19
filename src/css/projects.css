@@ -41,6 +41,7 @@
   border-radius: 10px;
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .cards__item:hover {
   box-shadow: 0 0 20px 10px rgba(28, 34, 36, 0.5);
