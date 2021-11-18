@@ -26,7 +26,9 @@ const matches=useMedia("(max-width:600px)")
       <div class="cards">
         <div class="cards__container">
           <div class="cards__wrapper">
-            <ul class="cards__items" style={{marginRight:matches?"30px":""}}>
+            <ul class="cards__items" 
+            style={{marginRight:"30px"}}
+            >
               <div class="cards__div">
                 <li class="cards__item">
                   <a
