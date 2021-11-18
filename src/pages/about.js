@@ -11,8 +11,10 @@ import "../css/style.css";
 import "../css/projects.css";
 import about_bg from "../images/about_bg.jpg";
 import Tilty from "react-tilty";
+import useMedia from "../css/useMedia"
 
 const About = () => {
+const matches=useMedia("(min-width:500px)")
   return (
     <div
       className="about_main_div pt-5"
@@ -61,7 +63,7 @@ const About = () => {
       </div>
       <div className="row d-flex text-center justify-content-center">
         <div
-          className="col-7 mx-4"
+          className={matches?"col-7 mx-4":"col-11"}
           style={{ backdropFilter: "brightness(0.5)", borderRadius: "20px" }}
         >
           <p className="font about_left">

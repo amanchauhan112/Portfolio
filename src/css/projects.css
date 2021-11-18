@@ -1,5 +1,6 @@
 .cards {
   padding: 4rem;
+  padding-bottom: 0rem;
   /* background-image: linear-gradient(
     to right,
     rgba(255, 0, 0, 0.7),
@@ -21,12 +22,14 @@
   max-width: 500px;
   width: 90%;
   margin: 10 auto;
+  margin-bottom: 0px;
 }
 
 .cards__wrapper {
   position: relative;
   margin: 100px 0 45px;
   justify-content: center;
+  margin-bottom: 0px;
 }
 
 .cards__items {
