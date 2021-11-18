@@ -7,6 +7,7 @@ import { Nav, NavLink, NavMenu } from "../components/navbar/navbarElements";
 import { Link } from "react-scroll";
 import "../components/navbar/navbar.css";
 import { IconContext } from "react-icons";
+import useMedia from "../css/useMedia";
 
 const Home = () => {
   // function App() {
@@ -17,6 +18,7 @@ const Home = () => {
   //     </div>
   //   );
   // }
+  const matches = useMedia("(min-width : 500px )");
   return (
     <div style={{overflow:"hidden"}}>
           
@@ -33,7 +35,11 @@ const Home = () => {
               <NavLink to="" className="nav_items">
                 <Link to="projectdiv">Projects</Link>
               </NavLink>
-
+<NavLink to="" className="nav_items py-1">
+  {matches?
+         <a className="resume" href="https://drive.google.com/file/d/1EUaHEdzDbGspdGIAKLavQLbscAT2hSA0/view?usp=sharing">Resume</a> 
+:""}
+</NavLink>
               <NavLink
                 to="/Aman's Portfolio.apk"
                 className="resume"

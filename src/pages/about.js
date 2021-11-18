@@ -45,7 +45,7 @@ const About = () => {
       </div>
       <div className="about_text_div mt-5">
         {/* <div className="img_text">
-          <div className="myimg_div">
+          <div >
             <img src={myimg} className="myimg" alt="myPic" />
           </div>
 
@@ -73,8 +73,8 @@ const About = () => {
             opportunities.
           </p>
         </div>
-        <div className="col-4">
-          <div className="myimg_div mt-4">
+        <div className="col-4 d-flex justify-content-center">
+          <div className="mt-4">
             <img src={myimg} className="myimg" alt="myPic" />
           </div>
         </div>
