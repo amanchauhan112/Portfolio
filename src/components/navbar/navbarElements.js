@@ -33,6 +33,10 @@ export const NavLink = styled(Link)`
   :hover {
     color: #15cdfc;
   }
+  @media screen and (max-width: 768px) {
+      font-size:15px;
+      padding: 0 0.5rem;
+    }
 `;
 
 export const Bars = styled(FaBars)`
