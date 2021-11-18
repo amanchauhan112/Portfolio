@@ -1,13 +1,3 @@
- .navbar-container {
-    /* width: 100%; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* min-width: 400px; */
-    /* overflow:hidden; */
- 
-  }
-
 .nav_items{
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 20px;
@@ -15,7 +5,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   .resume{
     border-radius: 4px;
     background: #256ce1;
-    padding: 10px 22px;
+    padding: 10px 0px;
     color: #fff;
     outline: none;
     border: none;
@@ -23,7 +13,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     /* Second Nav */
-    margin-left: 40px;
+    /* margin-left: 40px; */
    
   }
   .resume:hover {
@@ -44,9 +34,6 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
 
  @media screen and (max-width:385px) {
-   .navbar-container{
-     /* justify-content: right; */
-   }
    
    .myname{
 /* float:right; */

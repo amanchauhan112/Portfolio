@@ -6,13 +6,16 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Home from './pages/home'
 import About from './pages/about';
 import Projects from './pages/projects';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import useMedia from "./css/useMedia";
+import Sidebarr from './components/sidebar/Sidebar';
 // import Footer from './components/footer/footer';
 function App() {
+  const matches = useMedia("(min-width : 500px )");
   return (
     
-    <Router >
-    
-    <Navbar/>
+    <Router>
+    {matches?"":<Sidebarr/>}
 
     <Switch>
       <Route path="/" exact component={Home}></Route>

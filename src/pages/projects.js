@@ -44,6 +44,7 @@ take it to nearby hospital or clinic.
 Regression ,Clustering ,Classification of data.
 </p> */}
 
+<h2 style={{color: "white",fontFamily:"serif",fontSize: "40px"}} className="pt-5">My Projects</h2>
 <div class="cards">
   {/* <h1>Check out My Work.</h1> */}
   <div class="cards__container">

@@ -1,52 +1,52 @@
-import React, { useState } from 'react';
-import {
-    Nav,
-    NavLink,
-    NavMenu,
-  } from './navbarElements';
-  import Sidebarr from '../sidebar/Sidebar';
+import React from "react";
+import { Nav, NavLink, NavMenu } from "./navbarElements";
+import Sidebarr from "../sidebar/Sidebar";
+import {Link} from "react-scroll"
+import "./navbar.css";
 
-import './navbar.css';
+import { IconContext } from "react-icons";
 
-import { IconContext } from 'react-icons';
-import { Link } from 'react-router-dom';
+function Navbar() {
+  return (
+    <div id="root">
+      <IconContext.Provider value={{ color: "#fff" }}>
+        <Sidebarr />
+        {/* <div className="extra"></div> */}
+        <Nav>
+          {/* <h1  ><a className="myname" href="/" >Aman Chauhan</a></h1> */}
 
+          <NavMenu>
+            <NavLink to="/" className="nav_items">
+              Home
+            </NavLink>
 
-    function Navbar() {
+            <NavLink to="/about" className="nav_items">
+              About
+            </NavLink>
 
-    return (
-        <div className="container" id="root" >
-            
-      <IconContext.Provider value={{ color: '#fff' }}>
-      <Sidebarr />
-{/* <div className="extra"></div> */}
-        <Nav className="navbar navbar-container">
-        <h1  ><a className="myname" href="/" >Aman Chauhan</a></h1>
+            <NavLink to="/projects" className="nav_items">
+              Projects
+            </NavLink>
 
+            <NavLink
+              to="/Aman's Portfolio.apk"
+              className="resume"
+              target="_blank"
+              download
+              style={{
+                color: "yellow",
+                fontWeight: "600",
+                background: "none",
+              }}
+            >
+              (Apk)
+            </NavLink>
+          </NavMenu>
 
-<NavMenu>
+          {/* <a className="resume" href="https://drive.google.com/file/d/1EUaHEdzDbGspdGIAKLavQLbscAT2hSA0/view?usp=sharing">Resume</a> */}
+        </Nav>
 
-<NavLink to="/" className="nav_items">
-    Home
-</NavLink>
-
-<NavLink to="/about" className="nav_items" >
-    About
-</NavLink>
-
-<NavLink to="/projects" className="nav_items" >
-    Projects
-</NavLink>
-
-</NavMenu>
-
-<a className="resume" href="https://drive.google.com/file/d/1EUaHEdzDbGspdGIAKLavQLbscAT2hSA0/view?usp=sharing">Resume</a>
-
-<Link to="/Aman's Portfolio.apk" className="resume" target="_blank" download style={{color:'yellow',textDecoration:"none",fontWeight:"600",background:"none"}}>(Apk)</Link>
-</Nav>
-
-
-{/* <nav class="navbar">
+        {/* <nav class="navbar">
 
 <Sidebarr />
 
@@ -74,9 +74,9 @@ import { Link } from 'react-router-dom';
             </a>
         </div>
 </nav> */}
-        </IconContext.Provider>
-        </div>
-    )
+      </IconContext.Provider>
+    </div>
+  );
 }
 
-export default Navbar
+export default Navbar;

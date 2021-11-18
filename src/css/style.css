@@ -46,9 +46,6 @@
         background-image:url(https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cG9ydGZvbGlvfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60);
         background-size:cover;
         background-repeat:no-repeat;
-        height: 100vh;
-         
-      height: 650px;
   
  
 }
@@ -62,7 +59,13 @@
         justify-content: center; */
 
     }
-
+.about_left{
+    border-radius: 10%;
+    padding: 4%;
+    color: aliceblue;
+    width: 98%;
+    filter: blur(5%);
+}
 .text{
     background-color: rgb(70, 70, 138);
     border-radius: 10%;
@@ -92,6 +95,11 @@
         background-position:center;
       }
 
+.card_in_div{
+/* height: 300px; */
+/* width: 200px; */
+background-color: #fff;
+}
 @media screen and (max-width:1000px){
        
          .myimg .text .content{

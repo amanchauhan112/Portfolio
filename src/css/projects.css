@@ -108,10 +108,12 @@
 
 .cards__item__img:hover {
   transform: scale(1.1);
+  text-decoration: none;
 }
 
 .cards__item__info {
   padding: 12px 13px 13px;
+  text-decoration: none;
 }
 
 .cards__item__text {
@@ -121,6 +123,7 @@
   color: white;
   font-size: 18px;
   line-height: 24px;
+  text-decoration: none;
 }
 
 .cards__div{
