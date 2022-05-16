@@ -1,0 +1,55 @@
+.skill_main{
+    margin-top: 5rem;
+    padding-bottom: 1rem;
+}
+.skill_heading{
+text-align: center;
+font-family: sans-serif;
+color: #212121;
+font-weight: 800;
+margin-top: 10rem;
+}
+.skill_cards{
+font-size: 20px;
+}
+.SkillCardRow{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem 0px;
+}
+.SkillCard{
+    padding-top: 10px;
+    text-align: center;
+    background-color: #212121;
+    color: white;
+    border-radius: 10px;
+    width: 150px;
+    margin: 20px 10px;
+    box-shadow: 2px 2px 5px 2px rgb(169, 173, 169);
+
+    transform: skew(-10deg);
+}
+.parallelogram {
+    width: 160px;
+    height: 100px;
+    background: #1b191c;
+    -webkit-transform: skew(30deg);
+    -moz-transform: skew(30deg);
+    -o-transform: skew(30deg);
+    transform: skew(-30deg);
+    box-shadow: 6px 2px 5px 2px rgba(145, 140, 140, 0.603);
+    border-radius: 8px;  
+}
+.pp{
+    position: absolute;  
+    top: 40%;
+    left: 20%;
+    color: white;
+    font-size: 20px;
+}
+@media screen and (max-width:500px) { 
+        .SkillCard{
+            padding-top: 10px;
+            margin: 10px 5px;
+        }
+    }

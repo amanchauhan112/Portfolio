@@ -1,0 +1,60 @@
+.about_main_div{
+    text-align:center;
+    background-image:url(https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cG9ydGZvbGlvfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60);
+    background-size:cover;
+    background-repeat:no-repeat;
+    overflow: hidden;
+}
+
+.who_am_i{
+    color: white;
+    font-family: serif;
+    font-size: 40px;
+}
+.about_left{
+    border-radius: 10%;
+    padding: 4%;
+    color: aliceblue;
+    width: 98%;
+    filter: blur(5%);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
+.tilty_points{
+    margin: 1rem 0rem;
+}
+.tilty_points li{ 
+margin: 1rem 0px;
+}
+.myimg
+{
+    margin-top: 20px;
+
+  width:200px;
+  height:200px;
+  /* float:right; */
+  border-radius:20%;
+  /* margin-right:60px; */
+}
+
+@media screen and (max-width:1000px){
+       
+    .myimg .text .content{
+       position: fixed;
+       margin: 10%;
+       }
+       .text{
+           width: 98%;
+           margin: 5px;
+       }
+
+ }
+
+@media screen and (max-width:410px){
+    .text{
+       font-size: 20px;
+   }
+   .who_am_i{
+       font-size: 28px;
+   }
+}

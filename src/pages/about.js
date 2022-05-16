@@ -1,72 +1,27 @@
-import myimg from "../images/my1.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedin,
-  faGithub,
-  faWordpress,
-  faTwitter,
-  faFacebook,
-} from "@fortawesome/free-brands-svg-icons";
-import "../css/style.css";
-import "../css/projects.css";
-import about_bg from "../images/about_bg.jpg";
+import myimg from "../assets/images/my1.jpg";
+import "../assets/css/about.css";
+import about_bg from "../assets/images/about_bg.jpg";
 import Tilty from "react-tilty";
-import useMedia from "../css/useMedia"
+import useMedia from "../assets/css/useMedia";
+import CLLogo from "../assets/images/cllogo.png";
+import STLogo from "../assets/images/STLogo.png";
+import Skills from "./skills";
 
 const About = () => {
-const matches=useMedia("(min-width:500px)")
+  const matches = useMedia("(min-width:500px)");
   return (
     <div
       className="about_main_div pt-5"
       style={{ backgroundImage: `url(${about_bg})` }}
-    >
-      <div>
-        <h1 className="subheading">Who Am I?</h1>
-      </div>
+    >     
+      <h1 className="who_am_i">Who Am I?</h1>    
 
-      <div>
-        <a href="https://www.linkedin.com/in/aman-chauhan-2b51471b6/">
-          <FontAwesomeIcon icon={faLinkedin} style={{ color: "white" }} />
-        </a>
-        &emsp;
-        <a href="https://github.com/amanchauhan112">
-          <FontAwesomeIcon icon={faGithub} style={{ color: "white" }} />
-        </a>
-        &emsp;
-        <a href="https://trashsetgo.wordpress.com">
-          <FontAwesomeIcon icon={faWordpress} style={{ color: "white" }} />
-        </a>
-        &emsp;
-        <a href="https://twitter.com/Amanchauhan2801">
-          <FontAwesomeIcon icon={faTwitter} style={{ color: "white" }} />
-        </a>
-        &emsp;
-        <a href="https://m.facebook.com/aman.chauhan.9809">
-          <FontAwesomeIcon icon={faFacebook} style={{ color: "white" }} />
-        </a>
-      </div>
-      <div className="about_text_div mt-5">
-        {/* <div className="img_text">
-          <div >
-            <img src={myimg} className="myimg" alt="myPic" />
-          </div>
-
-          <p className="font text">
-            I currently am a student of GTBIT.I started my web dev journey in my
-            2nd semester , that time I only knew HTML & CSS .I created websites
-            using that only and also I learnt Bootstrap at that time. Today, I
-            use ReactJS,NodeJS,MONGODB to develop websites. I specialize in
-            creating beautiful websites using best practice accesibility and
-            latest web standards.
-          </p>
-        </div> */}
-      </div>
       <div className="row d-flex text-center justify-content-center">
         <div
-          className={matches?"col-7 mx-4":"col-11"}
+          className={matches ? "col-7 mx-4 mt-5" : "col-11 mt-5"}
           style={{ backdropFilter: "brightness(0.5)", borderRadius: "20px" }}
         >
-          <p className="font about_left">
+          <p className="about_left">
             Hello! I'm Aman . I currently am a student of GTBIT.I specialize in
             creating beautiful websites using best practice accesibility and
             latest web standards. I am a self-motivated Web Developer and a
@@ -81,80 +36,85 @@ const matches=useMedia("(min-width:500px)")
           </div>
         </div>
       </div>
-      <div>
-        <div style={{ margin: "0px 20px" }} className="py-5">
-          <div className="row d-flex justify-content-center">
+          <div className={matches?"row mt-5 mx-5":"row mt-5"}>
             <Tilty
               axis="X"
               glare="false"
               max="45"
               perspective={1000}
               easing="cubic-bezier(.03,.98,.52,.99)"
-              className="col-sm Tilt  p-4 shadow"
+              className="col-sm Tilt shadow py-5"
               style={{
                 transformStyle: "preserve-3d",
                 backgroundColor: "#FAFAFA",
-                margin: "1vh 4vw",
-                borderRadius: "1rem",
-                padding: "0.5rem",
+                margin: "1vh 2vw",
+                borderRadius: "1rem",                
+                marginLeft:matches?"":"22px",
+                maxWidth:matches?"":"22rem"
               }}
             >
               <div
-                style={{
-                  margin: "5%",
-                  transform: "translateZ(30px)",
-                  textAlign: "center",
-                }}
-              >
-                <h3 style={{ color: "#000", fontWeight: "600" }}>My Skills</h3>
-                <p>Web Dev: HTML,CSS,Bootstrap</p>
-                <p>Frameworks:ReactJS,NodeJS,</p>
-                <p>Languages:C++JavaScript,</p>
-                <p>Other Tools:MongoDB,Git/Github</p>
-                <br />
-              </div>
-            </Tilty>
-            <Tilty
-              axis="X"
-              glare="false"
-              max="45"
-              perspective={1000}
-              easing="cubic-bezier(.03,.98,.52,.99)"
-              className="col-sm Tilt  p-4 shadow"
-              style={{
-                transformStyle: "preserve-3d",
-                backgroundColor: "#FAFAFA",
-                margin: "1vh 4vw",
-                borderRadius: "1rem",
-                padding: "0.5rem",
-              }}
-            >
-              <div
-                style={{
-                  margin: "5%",
-                  transform: "translateZ(30px)",
-                  textAlign: "center",
-                }}
-              >
-                <h3 style={{ color: "#000", fontWeight: "600" }}>
-                  Internship:
-                </h3>
-                <b>
-                  <a href="https://www.cantileverlabs.com/">Cantilever Labs</a>
-                </b>
-                <ul>
-                  <li>
-                    -Added <b>high impact</b> components like dashboard and
-                    payment gateways.
+                style={{transform: "translateZ(30px)"}}>
+              <h3 style={{fontWeight: "600" }}>Internship:</h3>
+                         <a href="https://www.cantileverlabs.com/" target="_blank" rel="noreferrer">
+                  <img src={CLLogo} alt="cllogo"  height="50" width="200" className="my-2" />
+                </a>
+                <ul className="tilty_points">
+                  <li>Added high impact components like dashboard and payment gateways.
                   </li>
                   <li>
-                    -Added components that are visited by <b>5000+ </b>students.
+                    Added components that are visited by <b>5000+ </b>students.
                   </li>
-                  <li>-Worked with Api’s and Improved UI-UX of the website.</li>
+                  <li>Worked with Api’s and Improved UI-UX of the website.</li>
                 </ul>
               </div>
             </Tilty>
             <Tilty
+              axis="X"
+              glare="false"
+              max="45"
+              perspective={1000}
+              easing="cubic-bezier(.03,.98,.52,.99)"
+              className="col-sm Tilt  shadow py-5"
+              style={{
+                transformStyle: "preserve-3d",
+                backgroundColor: "#FAFAFA",
+                margin: "1vh 4vw",
+                borderRadius: "1rem",
+                padding: "0.5rem",
+                marginLeft:matches?"":"22px",
+                maxWidth:matches?"":"22rem"
+              }}
+            >
+              <div style={{transform: "translateZ(30px)"}}>
+                <h3 style={{fontWeight: "600" }}>Internship:</h3>
+
+                <a
+                  href="https://www.sigaramtech.com/?msclkid=e08a4fefcec111ec9bb0bff2c726d4ae"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={STLogo} alt="stlogo"  height="20" width="20" />
+                  <span
+                    style={{
+                      fontSize: "25px",
+                      fontWeight: "700",
+                      marginLeft: "10px",
+                      color: "black",
+                    }}
+                  >
+                    Sigaram Technology
+                  </span>
+                </a>
+
+                <ul className="tilty_points">
+                  <li>Worked on Dashboard and added lots of different features</li>
+                  <li>Worked with Api’s and UI-UX of the dashboard.</li>
+                  <li>Managed tasks on day-to-day basis.</li>
+                </ul>
+              </div>
+            </Tilty>
+            {/* <Tilty
               axis="X"
               glare="false"
               max="45"
@@ -190,10 +150,9 @@ const matches=useMedia("(min-width:500px)")
                   <b>HackerEarth:</b> 1272 Contest Rating
                 </p>
               </div>
-            </Tilty>
+            </Tilty> */}
           </div>
-        </div>
-      </div>
+          <Skills />
     </div>
   );
 };

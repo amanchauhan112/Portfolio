@@ -1,0 +1,76 @@
+.home_main_div{
+    text-align:center;
+    background-image:url(https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydGZvbGlvfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60);
+    background-size:cover;
+    padding: 10rem 5rem;
+    color: white;
+  }
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.home_hello{
+    font-size: 120px;
+    font-weight: 800;
+}
+.home_myName{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 5rem;
+}
+.home_desc{
+    font-size:35px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 30px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #2b2727;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      background: rgb(159, 158, 158); 
+      border-radius: 6px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgb(234, 231, 231);
+  }
+
+@media screen and (max-width:475px){
+    .home_main_div{
+        padding: 5rem 1rem;
+      }
+    .home_hello{
+        font-size: 80px;
+        font-weight: 800;
+    }
+    .home_myName{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 5rem;
+    }
+    .home_desc{
+        font-size:20px;
+        font-weight: 600;
+        line-height: 30px;
+    }  
+
+}
+
+@media screen and (max-width:275px){
+    .home_main_div{
+        height:500px;
+    }
+
+}

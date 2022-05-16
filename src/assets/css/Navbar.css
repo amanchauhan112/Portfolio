@@ -1,0 +1,26 @@
+.navbar_main{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 0px;
+}
+.nav_items{
+    margin:0px 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+}
+.nav_items:hover{
+    color: rgb(234, 227, 227);
+    text-decoration: none;
+}
+@media screen and (max-width:500px) {
+    .navbar_main{
+        padding-left: 2rem;
+    }
+    .nav_items{
+        margin:0px 0.4rem;
+    }
+}

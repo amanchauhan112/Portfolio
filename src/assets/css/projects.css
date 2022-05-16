@@ -1,0 +1,140 @@
+.project_main_div {
+  /* text-align:center; */
+  /* background-image:url(https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBvcnRmb2xpb3xlbnwwfDF8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(14, 23, 65);
+}
+
+.my_projects {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 2rem 0;
+  padding-top: 5rem;
+  text-align: center;
+}
+.cards {
+  padding: 4rem 2rem;
+  display: flex;
+}
+.cards__item {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(10px 10px 20px rgba(56, 125, 255, 0.017));
+  border-radius: 10px;
+  margin: 0px 2rem;
+}
+
+/* .cards__item__pic-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 67%;
+} */
+
+/* .cards__item__pic-wrap::after {
+  content: attr(data-category);
+  position: absolute;
+  bottom: 0;
+  margin-left: 10px;
+  padding: 6px 8px;
+  max-width: calc((100%) - 60px);
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #1f98f4;
+  box-sizing: border-box;
+} */
+
+/* .cards__item__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 90%;
+  max-width: 90%;
+  margin-left: 5%;
+  height: 90%;
+  max-height: 90%;
+  transition: all 0.2s linear;
+  margin-top: 20px;
+}
+
+.cards__item__img:hover {
+  transform: scale(1.1);
+  text-decoration: none;
+} */
+
+.project_name {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 30px;
+}
+
+.cards__item__info {
+  padding: 0px 10px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.project_desc {
+  padding: 20px;
+  /* background-color: rgba(0, 17, 255, 0.158); */
+  color: rgb(203, 203, 203);
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project_link {
+  font-size: 20px;
+  text-decoration: none;
+  margin: 20px 30px;
+  color: rgb(255, 238, 0);
+  max-width: fit-content;
+}
+.project_link:hover {
+  text-decoration: none;
+  color: rgb(255, 253, 227);
+}
+
+@media only screen and (min-width: 1200px) {
+  .content__blog__container {
+    width: 84%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards__items {
+    display: flow-root;
+  }
+}
+@media only screen and (max-width: 500px) {  
+  
+  .my_projects {
+    padding-top: 5rem;
+  }
+  
+  .cards {
+    padding: 0rem;
+    display: block;
+  }
+
+.cards__item {
+  width: 90%;
+  margin: 0px 1rem;
+}
+
+.project_link {
+  margin: 10px 30px;
+}
+
+}
