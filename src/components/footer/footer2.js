@@ -67,13 +67,13 @@ const Footer2 = () => {
           <FontAwesomeIcon icon={faWordpress} style={{ color: "white" }} />
         </a>
         &emsp;
-        <a target={"_blank"} rel="noreferrer" href="https://twitter.com/Amanchauhan2801">
+        {/* <a target={"_blank"} rel="noreferrer" href="https://twitter.com/Amanchauhan2801">
           <FontAwesomeIcon icon={faTwitter} style={{ color: "white" }} />
         </a>
         &emsp;
         <a target={"_blank"} rel="noreferrer" href="https://m.facebook.com/aman.chauhan.9809">
           <FontAwesomeIcon icon={faFacebook} style={{ color: "white" }} />
-        </a>
+        </a> */}
       </div>
           </div>
         </section>

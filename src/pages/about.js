@@ -22,7 +22,7 @@ const About = () => {
           style={{ backdropFilter: "brightness(0.5)", borderRadius: "20px" }}
         >
           <p className="about_left">
-            Hello! I'm Aman . I currently am a student of GTBIT.I specialize in
+            Hello! I'm Aman . I did my graduation Guru Tegh Bahadur Institute of Technology, Delhi,India.I specialize in
             creating beautiful websites using best practice accesibility and
             latest web standards. I am a self-motivated Web Developer and a
             person slighty obsessed for code quality. If I'll be hired by you
@@ -55,7 +55,7 @@ const About = () => {
             >
               <div
                 style={{transform: "translateZ(30px)"}}>
-              <h3 style={{fontWeight: "600" }}>Internship:</h3>
+              <h3 style={{fontWeight: "600" }}>MERN Stack Intern</h3>
                          <a href="https://www.cantileverlabs.com/" target="_blank" rel="noreferrer">
                   <img src={CLLogo} alt="cllogo"  height="50" width="200" className="my-2" />
                 </a>
@@ -87,7 +87,7 @@ const About = () => {
               }}
             >
               <div style={{transform: "translateZ(30px)"}}>
-                <h3 style={{fontWeight: "600" }}>Internship:</h3>
+                <h3 style={{fontWeight: "600" }}>ReactJS Developer</h3>
 
                 <a
                   href="https://www.sigaramtech.com/?msclkid=e08a4fefcec111ec9bb0bff2c726d4ae"

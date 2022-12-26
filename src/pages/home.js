@@ -25,7 +25,7 @@ const Home = () => {
 
         <a
           className="nav_items py-1"
-          href="https://drive.google.com/file/d/1NI9lHLtEOwFhfiQpOgcTUWVcMTXJ0Gzw/view?usp=sharing"
+          href="https://drive.google.com/file/d/1n75afm7lFuZfFfx8rKBCCW0NmY7BpFcv/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
