@@ -31,8 +31,7 @@ to pay for the required item.`,
   {
     img: "https://media.discordapp.net/attachments/827789384031273021/865184927929597982/unknown.png?width=1440&height=655",
     desc: `This site will help you to know about Indian
-        festivals. You can search in the searchbar for various festivals."
-`,
+        festivals. You can search in the searchbar for various festivals.`,
     key: "4",
     techType: "React App",
     RouteLink: "https://festivalsind.web.app/",

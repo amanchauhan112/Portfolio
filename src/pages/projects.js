@@ -1,17 +1,17 @@
 import React from "react";
 import "../assets/css/projects.css";
 import { ProjectsDetails } from "../ProjectsDetails";
-import Footer2 from "../components/footer/footer2";
+import Footer from "../components/footer/footer";
 const Projects = () => {
 
   const ProjectCard = ({ img_src, desc, techType, RouteLink,name }) => {
     return (
           <div className="cards__item">
-            {/* <a href={RouteLink} target="_blan">
+            <a href={RouteLink} target="_blank" rel="noreferrer">
               <figure className="cards__item__pic-wrap" data-category={techType}>
                 <img className="cards__item__img" alt="Travel" src={img_src} />
               </figure>
-            </a> */}
+            </a>
             <p className="project_name">{name}</p>
             <div className="cards__item__info">
               <h5 className="project_desc">{desc}</h5>
@@ -35,7 +35,7 @@ const Projects = () => {
           />
         ))}
       </div>
-      <Footer2 />
+      <Footer />
     </div>
   );
 };

@@ -22,12 +22,11 @@ const About = () => {
           style={{ backdropFilter: "brightness(0.5)", borderRadius: "20px" }}
         >
           <p className="about_left">
-            Hello! I'm Aman . I did my graduation Guru Tegh Bahadur Institute of Technology, Delhi,India.I specialize in
-            creating beautiful websites using best practice accesibility and
-            latest web standards. I am a self-motivated Web Developer and a
-            person slighty obsessed for code quality. If I'll be hired by you
-            then it would be a great pleasure for me. I’m currently looking for
-            opportunities.
+          Hello! I'm Aman Chauhan. I completed my Bachelor of Technology from Guru Tegh Bahadur Institute of Technology, Delhi, India ( 2018-2022 ). 
+          I am a MERN Stack Developer. I have created multiple projects using ReactJS and Nodejs. 
+          I worked at Cantilever Labs as MERN Stack Intern for 6 months and at Sigaram Technologies for 1 year as ReactJS Developer. 
+          I am a self-inspired person and self-disciplined person. I believe in putting my best and my thinking is that if you are doing your 
+          work with your best efforts, definitely you will get success in that work.
           </p>
         </div>
         <div className="col-4 d-flex justify-content-center">
@@ -55,7 +54,7 @@ const About = () => {
             >
               <div
                 style={{transform: "translateZ(30px)"}}>
-              <h3 style={{fontWeight: "600" }}>MERN Stack Intern</h3>
+              <h3 style={{fontWeight: "600" }}>MERN Stack Intern (6 Months)</h3>
                          <a href="https://www.cantileverlabs.com/" target="_blank" rel="noreferrer">
                   <img src={CLLogo} alt="cllogo"  height="50" width="200" className="my-2" />
                 </a>
@@ -87,7 +86,7 @@ const About = () => {
               }}
             >
               <div style={{transform: "translateZ(30px)"}}>
-                <h3 style={{fontWeight: "600" }}>ReactJS Developer</h3>
+                <h3 style={{fontWeight: "600" }}>ReactJS Developer (1 year)</h3>
 
                 <a
                   href="https://www.sigaramtech.com/?msclkid=e08a4fefcec111ec9bb0bff2c726d4ae"
@@ -114,43 +113,6 @@ const About = () => {
                 </ul>
               </div>
             </Tilty>
-            {/* <Tilty
-              axis="X"
-              glare="false"
-              max="45"
-              perspective={1000}
-              easing="cubic-bezier(.03,.98,.52,.99)"
-              className="col-sm Tilt  p-4 shadow"
-              style={{
-                transformStyle: "preserve-3d",
-                backgroundColor: "#FAFAFA",
-                margin: "1vh 4vw",
-                borderRadius: "1rem",
-                padding: "0.5rem",
-              }}
-            >
-              <div
-                style={{
-                  margin: "5%",
-                  transform: "translateZ(30px)",
-                  textAlign: "center",
-                }}
-              >
-                <h3 style={{ color: "#000", fontWeight: "600" }}>
-                  Programming Skills:
-                </h3>
-                <br />
-                <p>
-                  <b>GeeksForGeeks:</b> 240+ problems solved
-                </p>
-                <p>
-                  <b>CodeChef:</b>1583 Rating{" "}
-                </p>
-                <p>
-                  <b>HackerEarth:</b> 1272 Contest Rating
-                </p>
-              </div>
-            </Tilty> */}
           </div>
           <Skills />
     </div>
