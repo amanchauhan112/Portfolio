@@ -37,7 +37,7 @@ const matches=useMedia("(max-width:500px)");
               );
             })}
 {  matches && <li className="nav-text nav-text-resume">
-                  <a href="https://drive.google.com/file/d/109gt34PWfh8vKVJVM1Fuvftp_n9EZGvB/view?usp=sharing">
+                  <a href="https://drive.google.com/file/d/1AphJS_7cgiVK9uHSCOoUMmwDcDRredBy/view?usp=sharing">
                 <AiIcons.AiFillFilePdf />
                   
                     <span>Resume</span>

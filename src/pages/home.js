@@ -13,9 +13,9 @@ const Home = () => {
   return (
     <div style={{ overflow: "hidden" }}>
       <div className="navbar_main">
-        <Link to="homediv" className="nav_items">
+        {matches&&<Link to="homediv" className="nav_items">
           Home
-        </Link>
+        </Link>}
         <Link to="aboutdiv" className="nav_items">
           About
         </Link>
@@ -25,11 +25,11 @@ const Home = () => {
 
         <a
           className="nav_items py-1"
-          href="https://drive.google.com/file/d/109gt34PWfh8vKVJVM1Fuvftp_n9EZGvB/view?usp=sharing"
+          href="https://drive.google.com/file/d/1AphJS_7cgiVK9uHSCOoUMmwDcDRredBy/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
-          {matches ? "Resume" : ""}
+           Resume
         </a>
        { matches&&<NavLink
           to="/Aman's Portfolio.apk"
