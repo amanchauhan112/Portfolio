@@ -1,6 +1,6 @@
 openapi: '3.0.2'
 info:
-  title: Automated Services API Spec
+  title: Automated Services API Specs
   version: '1.0'
 servers:
   - url: https://automatedservices.beta.navcanada.ca
