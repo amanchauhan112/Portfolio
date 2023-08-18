@@ -1,0 +1,236 @@
+openapi: '3.0.2'
+info:
+  title: Automated Services API Spec
+  version: '1.0'
+servers:
+  - url: https://automatedservices.beta.navcanada.ca
+    description: Beta testing
+  - url: https://automatedservices.navcanada.ca
+    description: Production
+
+paths:
+  /rpa/api/validate/v1/{phone_num}:
+    get:
+      description: 'Validate that the phone number is a valid CFPS phone number.  A pilot can enter their phone number after creating an account in CFPS.'
+      summary: Validate that the phone number is a valid CFPS phone number
+      parameters: 
+        - in: path
+          name: phone_num 
+          description: 'Phone number, ex. +16139831111'
+          schema:
+            example: '+16139831111'
+            type: string
+          required: true
+      responses:
+        '200':
+          description: OK
+        '404':
+          description: Not Found
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+  /rpa/nards/api/3acode/v1/{fir}:
+    get:
+      description: '/VR?requests=[{"acid":"CFAAP","departure":"CYOB","destination":"CYEG","etd":"1945Z","registration":"MYREG", "route":"TRAINING ZONE", "alt": "A010"}]'
+      summary: Send a batch of flight requests to recieve transponder codes
+      parameters: 
+        - in: path
+          name: fir 
+          description: 'Flight Information Region Code, ex. VR'
+          schema:
+            default: VR
+            example: VR
+            type: string
+          required: true
+        - in: query
+          name: requests
+          explode: false
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/3ACodeRequest'
+          required: true
+      responses:
+        '200':
+          description: OK, 3acode returned
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/3ACodeResponse'
+        '201':
+          description: OK, 3Acode created and returned
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/3ACodeResponse'
+        '400':
+          description: Bad request, validation error
+        '503':
+          description: Service unavailable for FIR
+        '500':
+          $ref: '#/components/responses/UnhandledError'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+
+  /rpa/nards/api/3acode/v1/{fir}/validate:
+    get:
+      description: 'Send a batch of flight requests to validate.  No transponder codes are created or returned.  This API is used to perform server side validation on a request before submitting.'
+      summary: 'Send a batch of flight requests to validate. '
+      parameters: 
+        - in: path
+          name: fir 
+          schema:
+            type: string
+            default: VR
+            example: VR
+          required: true
+        - in: query
+          name: requests
+          explode: false
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/3ACodeRequest'
+          required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/3ACodeResponse'
+              
+          
+        '201':
+          description: OK, 3Acode created and returned
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/3ACodeResponse'
+        '400':
+          description: Bad request, validation error
+        '503':
+          description: Service unavailable for FIR
+        '500':
+          $ref: '#/components/responses/UnhandledError'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+
+components:
+  responses:
+    UnauthorizedError:
+      description: Authentication information is missing or invalid
+      headers:
+        WWW_Authenticate:
+          schema:
+            type: string
+    Forbidden:
+      description: Forbidden, missing or invalid HMAC in header
+      headers:
+        X-Twilio-Signature:
+          schema:
+            type: string
+    UnhandledError:
+      description: Unhandled Server Error
+  securitySchemes:
+    basicAuth:     # <-- arbitrary name for the security scheme
+      type: http
+      scheme: basic
+    hmacSig:
+      type: apiKey
+      in: header
+      description: HMAC code encoded with key
+      name: X-Twilio-Signature
+  schemas:
+    3ACodeResponse:
+      description: Response for 3ACode request
+      type: object
+      properties:
+        "MAC":
+          description: Transponder code
+          type: "string"
+        "success":
+          description: Success Indicator
+          type: "boolean"
+          example: false
+        "planCreated":
+          description: True if a new flight plan was created
+          type: "boolean"
+          example: false
+        "invalid_fields":
+          description: True if there were validation errors
+          type: "array"
+          items:
+            $ref: '#/components/schemas/InvalidFields'
+        "request":
+          type: object
+          $ref: '#/components/schemas/3ACodeRequest'
+        "duration":
+          description: Duration taken for transaction in milliseconds
+          type: number
+        "status":
+          description: Return status for request
+          type: number
+          example: 201
+    "InvalidFields":
+      description: Field validation error response
+      type: object
+      properties:
+        "field":
+          description: Field name
+          type: "string"
+          example: etd
+        "code":
+          description: Validation error code
+          type: "string"
+          example: INVALID_ETD_THRESHOLD
+          enum: [INVALID_ETD_THRESHOLD, INVALID_ETD_FORMAT, INVALID_REGISTRATION_FORMAT, INVALID_ACTYPE, INVALID_FIR, INVALID_ACID_FORMAT, INVALID_ALT_FORMAT, INVALID_AERODROME_FORMAT, INVALID_AERODROME_CANADIAN, INVALID_ROUTE_FORMAT]
+    3ACodeRequest:
+      description: 3ACode request
+      properties:
+        acid:
+          description: 'Flight Aircraft ID, ex. CFAAP'
+          example: CFAAP
+          type: "string"
+        departure:
+          description: 'Departure airport code, ex. CYOB'
+          example: CYOB
+          type: "string"
+        destination:
+          description: 'Destination airport code, ex. CYEG'
+          example: CYEG
+          type: "string"
+        etd:
+          description: 'Estimated time of departure in zulu time, ex. 1945Z'
+          example: 1945Z
+          type: "string"
+        registration:
+          description: 'Pilot registration Id (acreg)'
+          type: "string"
+        route:
+          description: 'Route description, ex. TRAINING ZONE'
+          example: TRAINING ZONE
+          type: "string"
+        alt:
+          description: 'Altitude between A010 and A125'
+          example: A010
+          type: "string"
+      type: object
+
+security: [{basicAuth: [],hmacSig: []}]
+
+
+  
